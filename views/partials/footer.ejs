@@ -1,0 +1,134 @@
+  </main>
+
+ <footer class="page-footer blue-grey darken-3">
+          <div class="footer-container center">
+
+
+          <ul class="footer-links">
+
+          <li> <a class="modal-trigger waves-effect waves-light btn" style="width: 250px;" href="#modal1">Terms & Conditions</a>
+                <div id="modal1" class="modal modal-fixed-footer">
+                  <div class="modal-content">
+                   <%- include termsandconditions.ejs %>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                  </div>
+                </div>
+
+
+                </li>
+              <li><a class="modal-trigger waves-effect waves-light btn" style="width: 250px;" href="#modal2">About Us</a>
+                  <div id="modal2" class="modal modal-fixed-footer">
+                  <div class="modal-content">
+                    <h4>About Us</h4>
+                    <span><img class="profile-anton" src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/12391930_10153855608236108_6324312321590448097_n.jpg?oh=11e284b3f58662574ab37278537d3277&oe=5722B427">
+
+                    <ul>
+                    
+                    <li>Name: Anton Åström</li>
+                    <li>Role: Creator and founder of Elegance</li>
+                    <li>Email: antonastrom93@hotmail.com</li>
+                    <li>Phone: (+46) 0767915761</li>
+
+                    </ul>
+
+
+                    </span>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                  </div>
+                </div>
+
+
+              </li>
+              <li> <a class="modal-trigger waves-effect waves-light btn" style="width: 250px;" href="#modal3">Returns</a>
+                <div id="modal3" class="modal modal-fixed-footer">
+                  <div class="modal-content">
+                    <h4>Returns</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos minus earum inventore magni aliquam, architecto deserunt repellat reiciendis quas quo. Quasi dignissimos eos commodi corporis officia ipsam repellat, aut facere.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                  </div>
+                </div>
+
+              </li>
+              <li> <a class="modal-trigger waves-effect waves-light btn" style="width: 250px;" href="#modal4">FAQ</a>
+                <div id="modal4" class="modal modal-fixed-footer">
+                  <div class="modal-content">
+                    <h4>FAQ - Frequently Asked Questions</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestiae nostrum numquam, omnis officia consectetur nobis id quaerat illum veniam doloribus non quidem nihil animi aut minima sapiente deserunt ratione.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                  </div>
+                </div></li>
+                        </ul>
+
+          <div class="copyright">
+          © 2014 Copyright Text
+          </div>
+         </div>
+        </footer>
+
+  <!-- SCRIPTS -->
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parallax.js"></script>  
+  <script>
+
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+    });
+
+  </script>
+
+  <script>
+
+    $(document).ready(function() {
+      $('.slider').slider();
+    });
+  
+</script>
+
+<script>
+  
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+</script>
+
+<script>
+
+$(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+
+</script>
+
+<script>
+
+ $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
+
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.icon {
+	margin-top: 5px;
+}
+
+nav {
+	display: inline-block;
+	cursor: pointer;
+    
+}
+
+#dropdown1 {
+	background-color: white;
+}
+
+#dropdown2 {
+	background-color: white;
+}
+
+.divider {
+	background-color: grey;
+}
+

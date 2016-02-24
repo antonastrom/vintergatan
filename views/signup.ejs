@@ -1,0 +1,39 @@
+<%- include partials/header.ejs %>
+<link rel="stylesheet" type="text/css" href="css/theme-background.css">
+<link rel="stylesheet" type="text/css" href="css/signup.css">
+
+<div class="content">
+    <!--Echo out errors here. See example-->
+    <!--<p class=error>Error, wrong username or password used. Please, try again.-->
+    <form>
+      <div class="mat-in">
+        <input type="text" name="username" value="" required></input>
+        <span class="bar"></span>
+        <label>Username</label>
+      </div>
+      <div class="mat-in">
+        <input type="password" name="password" value="" required></input>
+        <span class="bar"></span>
+        <label>Password</label>
+      </div>
+      <div class="mat-in">
+        <input type="password" name="confirm-password" value="" required></input>
+        <span class="bar"></span>
+        <label>Confirm Password</label>
+      </div>
+      <div class="mat-in">
+        <input type="text" name="email" value="" required></input>
+        <span class="bar"></span>
+        <label>Email</label>
+      </div>
+      <div class="mat-in">
+        <input type="text" name="confirm-email" value="" required></input>
+        <span class="bar"></span>
+        <label>Confirm Email</label>
+      </div>
+      <button type="submit" name="submit" id="signup">Submit</button>
+    </form>
+  </div>
+ 
+
+<%- include partials/footer.ejs %>

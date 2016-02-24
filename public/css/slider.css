@@ -1,0 +1,10 @@
+.slider {
+	text-shadow: 2px 2px black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #37474f;
+}
+
+.indicators {
+	padding-bottom: 5px;
+}

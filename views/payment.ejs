@@ -1,0 +1,64 @@
+<%- include partials/header.ejs %>
+
+
+<link rel="stylesheet" type="text/css" href="css/theme-background.css">
+<link rel="stylesheet" type="text/css" href="css/payment.css">
+
+
+<div class="content">
+    <!--Echo out errors here. See example-->
+    <!--<p class=error>Error, wrong username or password used. Please, try again.-->
+<a class='dropdown-button btn center' href='#' data-activates='dropdown3' style="margin-left: 19%; margin-top: 10px;"><span>Payment Method<i class="fa fa-caret-down"></i></span></a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown3' class='dropdown-content'>
+    <li><span><a href="#!">VISA</a><i class="fa fa-cc-visa fa-2x"></i></span></li>
+    <li><span><a href="#!">Mastercard</a><i class="fa fa-cc-mastercard fa-2x"></i></span></li>
+    <li><span><a href="#!">American Express</a><i class="fa fa-cc-amex fa-2x"></i></span></li>
+    <li><span><a href="#!">Paypal</a><i class="fa fa-cc-paypal fa-2x"></i></span></li>
+
+
+  </ul>
+      </ul>
+
+
+
+
+    <form>
+      <div class="mat-in">
+        <input type="text" name="first-name" value="" required></input>
+        <span class="bar"></span>
+        <label>First Name</label>
+      </div>
+      <div class="mat-in">
+        <input type="text" name="last-name" value="" required></input>
+        <span class="bar"></span>
+        <label>Last Name</label>
+      </div>
+      <div class="mat-in">
+        <input type="text" maxlength="19" data-stripe="number" name="card-number" value="" required></input>
+        <span class="bar"></span>
+        <label>Card Number</label>
+      </div>
+      <div class="mat-in">
+        <input type="text" name="expiration-date" value="" required></input>
+        <span class="bar"></span>
+        <label>Expiration Date (MM/YY)</label>
+      </div>
+      <div class="mat-in">
+        <input type="text" name="adress" value="" required></input>
+        <span class="bar"></span>
+        <label>Adress</label>
+      </div>
+            <div class="mat-in">
+        <input type="text" name="alternative-adress" value="" required></input>
+        <span class="bar"></span>
+        <label>Alternative Adress</label>
+      </div>
+      <button type="submit" name="send-order" id="send-order">Send Order</button>
+    </form>
+  </div>
+
+    
+
+<%- include partials/footer.ejs %> 
